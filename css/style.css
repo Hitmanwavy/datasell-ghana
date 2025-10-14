@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #000000;
+    color: #FFFFFF;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+.header {
+    background: #111111;
+    padding: 1rem;
+    border-bottom: 3px solid #FFD700;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    color: #FFD700;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #FFD700;
+}
+
+/* Hero/Page Header Styles */
+.hero, .page-header {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #000000 0%, #222222 100%);
+}
+
+.hero h1, .page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #FFD700;
+}
+
+.hero p, .page-header p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+/* Badge Styles */
+.mtn-badge {
+    background: #FFCC00;
+    color: #000000;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 5px 1rem 5px;
+}
+
+.non-expiry-badge {
+    background: #27ae60;
+    color: #FFFFFF;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 5px 1rem 5px;
+}
+
+/* Button Styles */
+.cta-button, .buy-button {
+    background: #FFD700;
+    color: #000000;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+.cta-button:hover, .buy-button:hover {
+    background: #000000;
+    color: #FFD700;
+    border: 2px solid #FFD700;
+}
+
+/* Features Section */
+.features {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.features h2 {
+    text-align: center;
+    color: #FFD700;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    background: #222222;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 2px solid #FFD700;
+    text-align: center;
+}
+
+.feature-card h3 {
+    color: #FFD700;
+    margin-bottom: 1rem;
+}
+
+/* Plans Section */
+.mtn-plans, .plans-container {
+    padding: 3rem 2rem;
+    background: #111111;
+    text-align: center;
+}
+
+.mtn-plans h2, .plans-container h2 {
+    color: #FFD700;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.plan-cards, .plans-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto 3rem auto;
+}
+
+.plan-card {
+    background: #222222;
+    padding: 2rem;
+    border-radius: 15px;
+    border: 3px solid #FFCC00;
+    text-align: center;
+    transition: transform 0.3s;
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.plan-card:hover {
+    transform: translateY(-5px);
+    border-color: #FFD700;
+}
+
+.plan-card.popular {
+    border-color: #27ae60;
+    position: relative;
+}
+
+.popular-badge {
+    background: #27ae60;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.plan-size {
+    color: #FFCC00;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.plan-duration {
+    color: #27ae60;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.plan-price {
+    color: #FFD700;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.plan-features {
+    list-style: none;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.plan-features li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #333;
+}
+
+.plan-features li:before {
+    content: "✓ ";
+    color: #27ae60;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    background: #111111;
+    text-align: center;
+    padding: 2rem;
+    border-top: 3px solid #FFD700;
+    margin-top: 2rem;
+}
+
+.back-button {
+    background: #333;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: 2px solid #FFD700;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.back-button:hover {
+    background: #FFD700;
+    color: #000000;
+}
